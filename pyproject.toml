@@ -1,0 +1,27 @@
+[project]
+name = "pylibchecker"
+version = "1.0.0"
+description = "This is a lightweight utility library designed to audit your Python environment"
+readme = "README.md"
+authors = [
+    { name = "bharathbabu", email = "bharath.r.babu@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "packaging>=25.0",
+    "yarg>=0.1.10",
+]
+[project.urls]
+"Homepage" = "https://github.com/babu1993/pyLibChecker"
+[project.scripts]
+pylibchecker = "pylibchecker:main"
+
+[project.optional-dependencies]
+report = [
+    "jinja2>=3.1.6",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
