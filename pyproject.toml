@@ -1,6 +1,6 @@
 [project]
-name = "pylibchecker"
-version = "1.0.0"
+name = "pyliblens"
+version = "1.0.1"
 description = "This is a lightweight utility library designed to audit your Python environment"
 readme = "README.md"
 authors = [
@@ -12,9 +12,9 @@ dependencies = [
     "yarg>=0.1.10",
 ]
 [project.urls]
-"Homepage" = "https://github.com/babu1993/pyLibChecker"
+"Homepage" = "https://github.com/babu1993/pyLibLens"
 [project.scripts]
-pylibchecker = "pylibchecker:main"
+pyliblens = "pyliblens:main"
 
 [project.optional-dependencies]
 report = [
